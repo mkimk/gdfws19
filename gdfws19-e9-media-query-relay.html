@@ -7,50 +7,97 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
         <style>
-            @media screen and (min-width: 1401px) and (max-width: 1500px) { /*Everett*/ 
+            @media screen and (min-width: 1401px) and (max-width: 1500px) { /*Everett*/
 
             }
 
-            @media screen and (min-width: 1301px) and (max-width: 1400px) { /*Calle*/ 
+            @media screen and (min-width: 1301px) and (max-width: 1400px) { /*Calle*/
 
             }
 
-            @media screen and (min-width: 1201px) and (max-width: 1300px) { /*Ju Eun*/ 
-                
+            @media screen and (min-width: 1201px) and (max-width: 1300px) { /*Ju Eun*/
+
             }
 
-            @media screen and (min-width: 1101px) and (max-width: 1200px) { /*April*/ 
-                
+            @media screen and (min-width: 1101px) and (max-width: 1200px) { /*April*/
+
             }
 
-            @media screen and (min-width: 1001px) and (max-width: 1100px) { /*Fred*/ 
-                
+            @media screen and (min-width: 1001px) and (max-width: 1100px) { /*Fred*/
+
             }
 
-            @media screen and (min-width: 901px) and (max-width: 1000px) { /*So Young*/ 
-                
+            @media screen and (min-width: 901px) and (max-width: 1000px) { /*So Young*/
+
             }
 
-            @media screen and (min-width: 901px) and (max-width: 900px) { /*Elena*/ 
-                
+            @media screen and (min-width: 901px) and (max-width: 900px) { /*Elena*/
+
             }
 
-            @media screen and (min-width: 701px) and (max-width: 800px) { /*Vanissa*/ 
-                
-            }
+            @media screen and (min-width: 701px) and (max-width: 800px) { /*Vanissa*/
 
-            @media screen and (min-width: 601px) and (max-width: 700px) { /*Everett*/ 
-                body { 
+              body {
+                  background-color:magenta;
+              }
+
+              [id^=div] {
+                  display:none;
+              }
+
+              #div4 {
+                  display:block;
+                  position:absolute;
+                  top: 50%;
+                  left:50%;
+                  width: 10vw;
+                  height: 10vw;
+                  padding:20%;
+                  background-color:red;
+
+                  border-radius: 500px;
+                  transform: translateX(-50%) translateY(-50%);
+                  animation-name: glow;
+                  animation-duration: 5s;
+                  animation-timing-function: ease-in-out;
+                  animation-delay: 0s;
+                  animation-iteration-count: infinite;
+              }
+
+
+              @-webkit-keyframes glow {
+                0% {
+                box-shadow: 10px 10px 50px green;
+              }
+
+                50% {
+                  box-shadow: 10px 10px 500px 200px blue;
+                }
+
+
+              100% {
+                box-shadow: 10px 10px 50px green;
+              }
+        }
+
+      }
+
+
+
+
+
+            @media screen and (min-width: 601px) and (max-width: 700px) { /*Everett*/
+                body {
                     background-color:blue;
                 }
-                [id^=div] { 
-                    display:none; 
+                [id^=div] {
+                    display:none;
                 }
                 #div3 {
                     display:block;
                     position:absolute;
                     top: 50%;
-                    left:50%; 
+                    left:50%;
                     width: 10vw;
                     height: 10vw;
                     padding:20%;
@@ -66,61 +113,61 @@
                     animation-direction: normal;
                     animation-play-state: running;
                     animation-fill-mode: none;
-                } 
+                }
             }
                   @-webkit-keyframes radius {
                     0% {
-                    border-radius: 500px; 
+                    border-radius: 500px;
                     }
                     15% {
-                    border-radius: 200px 200px 100px 400px; 
+                    border-radius: 200px 200px 100px 400px;
                     }
                     25% {
-                    border-radius: 100px 90px 80px 300px; 
+                    border-radius: 100px 90px 80px 300px;
                     }
                     35% {
-                    border-radius: 70px 60px 100px 40px; 
+                    border-radius: 70px 60px 100px 40px;
                     }
                     75% {
-                    border-radius: 100px 50px 80px 200px; 
+                    border-radius: 100px 50px 80px 200px;
                     }
                     85% {
-                    border-radius: 300px 100px 140px 230px; 
+                    border-radius: 300px 100px 140px 230px;
                     }
                     100% {
-                    border-radius: 500px; 
+                    border-radius: 500px;
                     }
                 }
 
-            @media screen and (min-width: 376px) and (max-width: 600px) { /*Alyzeh*/ 
-                
+            @media screen and (min-width: 376px) and (max-width: 600px) { /*Alyzeh*/
+
             }
 
-            /*Everett*/ 
+            /*Everett*/
 
-            @media screen and (max-width: 600px) { /*Sophia and Minkyoung*/ 
-                body { 
+            @media screen and (max-width: 600px) { /*Sophia and Minkyoung*/
+                body {
 <<<<<<< Updated upstream
                     background-color:yellow;
 =======
                     background-color:#fffe99;
 >>>>>>> Stashed changes
                 }
-                [id^=div] { 
-                    display:none; 
+                [id^=div] {
+                    display:none;
                 }
                 #div1 {
                     display:block;
                     position:absolute;
                     top: 50%;
-                    left:50%; 
+                    left:50%;
                     width: 10vw;
                     height: 10vw;
                     padding:20%;
                     background-color:#1194f4;
                     border-radius: 50%;
                     transform: translateX(-50%) translateY(-50%);
-                } 
+                }
             }
         </style>
     </head>
