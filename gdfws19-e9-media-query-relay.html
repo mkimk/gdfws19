@@ -39,9 +39,58 @@
                 
             }
 
-            @media screen and (min-width: 601px) and (max-width: 700px) { /*Sara*/ 
-                
+            @media screen and (min-width: 601px) and (max-width: 700px) { /*Everett*/ 
+                body { 
+                    background-color:blue;
+                }
+                [id^=div] { 
+                    display:none; 
+                }
+                #div3 {
+                    display:block;
+                    position:absolute;
+                    top: 50%;
+                    left:50%; 
+                    width: 10vw;
+                    height: 10vw;
+                    padding:20%;
+                    background-color:#1194f4;
+                    /*Animation for Radius*/
+                    border-radius: 500px;
+                    transform: translateX(-50%) translateY(-50%);
+                    animation-name: radius;
+                    animation-duration: 3.5s;
+                    animation-timing-function: linear;
+                    animation-delay: 0s;
+                    animation-iteration-count: infinite;
+                    animation-direction: normal;
+                    animation-play-state: running;
+                    animation-fill-mode: none;
+                } 
             }
+                  @-webkit-keyframes radius {
+                    0% {
+                    border-radius: 500px; 
+                    }
+                    15% {
+                    border-radius: 200px 200px 100px 400px; 
+                    }
+                    25% {
+                    border-radius: 100px 90px 80px 300px; 
+                    }
+                    35% {
+                    border-radius: 70px 60px 100px 40px; 
+                    }
+                    75% {
+                    border-radius: 100px 50px 80px 200px; 
+                    }
+                    85% {
+                    border-radius: 300px 100px 140px 230px; 
+                    }
+                    100% {
+                    border-radius: 500px; 
+                    }
+                }
 
             @media screen and (min-width: 376px) and (max-width: 600px) { /*Alyzeh*/ 
                 
