@@ -21,6 +21,49 @@
 
             @media screen and (min-width: 976px) and (max-width: 1075px) { /*Elena*/
 
+                body {
+                    background-color: crimson;
+                }
+
+                    #div8{
+                        position: absolute;
+                        display: block;
+                        width: 100px;
+                        height: 100px;
+                        background: linear-gradient(crimson, lightblue);
+                        border-radius: 100px;
+                        z-index: 2;
+                        animation-name: twirl;
+                        animation-duration: 6s;
+                        animation-delay: 0s;
+                        animation-iteration-count: infinite;
+                        animation-timing-function: ease-in-out;
+                    }
+
+                    @-webkit-keyframes twirl {
+                    0% {
+                        width: 100px;
+                        height: 100px;
+                        transform: rotate(0deg);
+                        border-radius: 100px;
+                    }
+                    50% {
+                    	margin-top:300px;
+                    	margin-left:300px;
+                        width: 500px;
+                        height: 500px;
+                        transform: rotate(360deg);
+                        border-radius: 500px;
+                    }
+
+                    100% {
+                        width: 100px;
+                        height: 100px;
+                        transform: rotate(0deg);
+                        border-radius: 100px;
+                    }
+                }
+
             }
 
             @media screen and (min-width: 876px) and (max-width: 975px) { /*Alyzeh*/
