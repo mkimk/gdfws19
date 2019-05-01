@@ -12,8 +12,79 @@
             }
 
             @media screen and (min-width: 1276px) and (max-width: 1375px) { /*Vanissa*/
+                body {
+                    background-color: pink;
+                }
 
+
+                    #div8{
+                        position: absolute;
+                        display: block;
+                        width: 400px;
+                        height: 400px;
+                        
+                        border-radius: 100px;
+                        z-index: 2;
+                        animation-name: twirl;
+                        animation-duration: 8s;
+                        animation-delay: 0s;
+                        animation-iteration-count: infinite;
+
+                    }
+
+                    @-webkit-keyframes twirl {
+                    0% {
+                        background: linear-gradient(lightgreen, palevioletred);
+                        margin-top:300px;
+                        margin-left:500px;
+                        width: 400px;
+                        height: 400px;
+                        transform: rotate(0deg);
+                        border-radius: 200px;
+                    }
+                    25% {
+                        background: linear-gradient(yellow, lightblue);
+                        margin-top:300px;
+                        margin-left:500px;
+                        width: 400px;
+                        height: 400px;
+                        transform: rotate(360deg);
+                        border-radius: 100px;
+                    }
+
+                    50% {
+                        background: linear-gradient(lavender, teal);
+                        margin-top:300px;
+                        margin-left:500px;
+                        width: 400px;
+                        height: 400px;
+                        transform: rotate(0deg);
+                        border-radius: 0px;
+                    }
+
+                    75% {
+                        background: linear-gradient(purple, red);
+                        margin-top:300px;
+                        margin-left:500px;
+                        width: 400px;
+                        height: 400px;
+                        transform: rotate(360deg);
+                        border-radius: 100px;
+                    }
+
+                    100% {
+                        background: linear-gradient(coral, yellow);
+                        margin-top:300px;
+                        margin-left:500px;
+                        width: 400px;
+                        height: 400px;
+                        transform: rotate(0deg);
+                        border-radius: 200px;
+                } 
             }
+
+        }
+ 
 
             @media screen and (min-width: 1176px) and (max-width: 1275px) { /*So Young*/
                
