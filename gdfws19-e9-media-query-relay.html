@@ -7,11 +7,58 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
         <style>
-            @media screen and (min-width: 1376px) { /*Sara*/
+            @media screen and (min-width: 1276px) { /*Sara*/
+
+                body {background:linear-gradient(yellow, red);}
+                
+
+                #div8{
+                    position: absolute;
+                    display: block;
+                    width: 400px;
+                    height: 400px;
+                    
+                    border-radius: 900px;
+                    z-index: 2;
+                    animation-name: twirl;
+                    animation-duration: 10s;
+                    animation-delay: 0s;
+                    animation-iteration-count: infinite;
+                }
+
+                @-webkit-keyframes twirl {
+                    0% {
+                        background: radial-gradient(yellow, white);
+                        margin-top:300px;
+                        margin-left:500px;
+                        width: 500px;
+                        height: 400px;
+                        transform: rotate(0deg);
+                        border-radius: 200px;
+                    }
+                     
+                    50% {
+                        background: radial-gradient(yellow, lightblue);
+                        margin-top:300px;
+                        margin-left:500px;
+                        width: 900px;
+                        height: 900px;
+                        transform: rotate(0deg);
+                        border-radius: 0px;
+                    }
+                    100% {
+                        background: radial-gradient(yellow, lightblue);
+                        margin-top:300px;
+                        margin-left:500px;
+                        width: 900px;
+                        height: 900px;
+                        transform: rotate(360deg);
+                        border-radius: 100px;
+                    }
+                 }
 
             }
-
-            @media screen and (min-width: 1276px) and (max-width: 1375px) { /*Vanissa*/
+            @media screen and (min-width: 1176px) and (max-width: 1275px) { /*Vanissa*/
                 body {
                     background-color: pink;
                 }
@@ -80,13 +127,13 @@
                         height: 400px;
                         transform: rotate(0deg);
                         border-radius: 200px;
-                } 
-            }
+                    } 
+                 }
 
-        }
+            }
  
 
-            @media screen and (min-width: 1176px) and (max-width: 1275px) { /*So Young*/
+            @media screen and (min-width: 1076px) and (max-width: 1175px) { /*So Young*/
                
               body{ background-color: darkblue;
               }
@@ -130,7 +177,7 @@
                     30%{ opacity:1; background-color:#white;}
                     60% { background-color:#lightblue; }  
                     
-          }
+            }
 
             }
 
@@ -161,10 +208,11 @@
                         height: 100px;
                         transform: rotate(0deg);
                         border-radius: 100px;
+                        margin-top:360px;
+                        margin-left:440px;
                     }
                     50% {
-                        margin-top:300px;
-                        margin-left:300px;
+
                         width: 500px;
                         height: 500px;
                         transform: rotate(360deg);
